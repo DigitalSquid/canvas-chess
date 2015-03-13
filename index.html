@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas/JS Experiment</title>
+<style>
+	body {background:#efefef; margin:0;}
+	canvas {height:352px; width:352px;}
+	#page {width:auto; position:relative; padding:50px 0; background:#fff; margin:0 auto; text-align:center;}
+	#board {position:relative; background:url(i/chrome_44px.gif); height:352px; width:352px; margin:0 auto;}
+	#highlight {position:absolute; top:0; left:0; z-index:0;}
+	#pieces {position:relative; z-index:1;}
+</style>
+</head>
+
+<body>
+	<div id="page">
+		<div id="board">
+			<canvas id="highlight" width="352" height="352"></canvas>
+			<canvas id="pieces" width="352" height="352">
+				Sorry, but your web browser cannot run this game. Try updating to a more recent browser release.
+			</canvas>
+		</div>
+		<p class="turn-tracker">Turn: <strong></strong></p>
+	</div>
+	<script src="js/game.js"></script>
+</body>
+</html>
